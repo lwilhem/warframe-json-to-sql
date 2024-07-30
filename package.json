@@ -4,10 +4,17 @@
   "version": "0.0.0",
   "packageManager": "pnpm@9.6.0",
   "license": "MIT",
+  "main": "./dist/index.js",
+  "bin": {
+    "wf-json-to-sql": "./dist/index.js"
+  },
   "scripts": {
     "lint": "eslint . --fix",
     "check": "tsc --noEmit",
     "build": "tsup --format esm"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
