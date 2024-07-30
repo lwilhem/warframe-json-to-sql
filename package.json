@@ -1,0 +1,24 @@
+{
+  "name": "warframe-json-to-sql",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@9.6.0",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "check": "tsc --noEmit",
+    "build": "tsup --format esm"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.24.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^9.8.0",
+    "tsup": "^8.2.3",
+    "typescript": "^5.5.4"
+  },
+  "pnpm": {
+    "overrides": {
+      "eslint": "^9"
+    }
+  }
+}
