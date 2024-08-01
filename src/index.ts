@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
-import process from "node:process"
 import { program } from "commander"
+import { db } from "./utils/db"
 
 program
+  .name("jwf-json-to-sql")
+  .description("Convert Data From warframe-items into an SQL database")
   .version("1.0.0")
-  .description("An example CLI for managing a directory")
-  .option("-l, --ls  [value]", "List directory contents")
-  .option("-m, --mkdir <value>", "Create a directory")
-  .option("-t, --touch <value>", "Create a file")
-  .parse(process.argv)
+
+program
+  .command("db")
+  .description("Create a new SQLite database")
+  .action(() => {
+    db.pragma("journal_mode = WAL")
+  })

@@ -14,10 +14,13 @@
     "build": "tsup --format esm"
   },
   "dependencies": {
-    "commander": "^12.1.0"
+    "better-sqlite3": "^11.1.2",
+    "commander": "^12.1.0",
+    "warframe-items": "^1.1262.109"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.24.0",
+    "@types/better-sqlite3": "^7.6.11",
     "@types/node": "^22.0.0",
     "eslint": "^9.8.0",
     "tsup": "^8.2.3",
