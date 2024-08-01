@@ -8,6 +8,6 @@ export default defineConfig({
   ],
   format: ["esm"],
   outDir: "./dist",
-  dts: true,
+  dts: false,
   clean: true,
 })
